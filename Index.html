@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styles.css" media="screen">
     <title>Estoque com CRUD</title>
 </head>
 <body>
-    
+    <h1 class="title" id="title">Estoque da loja</h1>
+    <form class="stock-table" id="stock-table">
+            <input type="text" class="data-input" id="item" placeholder="Item" />
+            <input type="text" class="data-input" id="brand" placeholder="Marca" />
+            <input type="text" class="data-input" id="model" placeholder="Modelo" />
+            <input type="text" class="data-input" id="serial-number" placeholder="Nº de Série" />
+            <button type="submit" class="add" id="add">Adicionar</button>
+            <ul class="list" id="list"></ul>
+    </form>
+
+    <script src="Script.js"></script>
+
 </body>
 </html>
