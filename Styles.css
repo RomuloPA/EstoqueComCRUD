@@ -1,11 +1,86 @@
-/** {
-    background-color: #c48787;
-    width: 100vw;
-    height: 100vh;
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
-body {
+.title, .stock-record, .stock-table {
+    display: none;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*height: 100vh;
+    width: 100vw;*/
+}
+
+video {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+.choose-one {
+    position: absolute;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 3rem;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    margin-top: -15rem;
+    margin-left: -70rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.3rem;
+    opacity: 0.9;
+}
+
+.choose-two {
+    position: absolute;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 3rem;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    margin-top: -15rem;
+    margin-left: -40rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.3rem;
+    opacity: 0.9;
+}
+
+.btn-choice {
+    width: 8rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    background: #ff0000;
+    color: #ffffff;
+    font-weight: bold;
+    border: 3px solid #fff;
+    padding: 0.2em 0.6em;
+    border-radius: 4rem;
+    margin-top: 0.5rem;
+}
+
+.btn-choice:hover {
+    background: #ffffff;
+    color: #ff0000;
+    border: 3px solid #ff0000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/*body {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

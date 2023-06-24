@@ -5,8 +5,8 @@ let itens = [];
 const stockTable = document.getElementById('stock-record');
 const inputItem = document.getElementById('item');
 const inputBrand = document.getElementById('brand');
-/*const inputModel = document.getElementById('model');
-const inputSerialNumber = document.getElementById('serial-number');*/
+const inputModel = document.getElementById('model');
+const inputSerialNumber = document.getElementById('serial-number');
 const stockList = document.getElementById('stock-list');
 
 // Função para adicionar um novo item
@@ -16,11 +16,11 @@ function addItem(event) {
     // Obtém os valores dos inputs
     const item = inputItem.value;
     const brand = inputBrand.value;
-    /*const model = inputModel.value;
-    const serialNumber = inputSerialNumber.value;*/
+    const model = inputModel.value;
+    const serialNumber = inputSerialNumber.value;
 
     // Cria um objeto com os dados do item
-    const newItem = { item, brand/*, model, serialNumber*/ };
+    const newItem = { item, brand, model, serialNumber };
 
     // Adiciona o item ao estoque
     itens.push(newItem);
@@ -28,8 +28,8 @@ function addItem(event) {
     // Limpa os inputs
     inputItem.value = '';
     inputBrand.value = '';
-    /*inputModel.value = '';
-    inputSerialNumber.value = '';*/
+    inputModel.value = '';
+    inputSerialNumber.value = '';
 
     // Atualiza a tabela
     displayStock();
@@ -41,19 +41,21 @@ function displayStock() {
     stockList.innerHTML = '';
     // Percorre o estoque e adiciona cada item à tabela
     itens.forEach((item, index) => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-          <td>${item.item}</td>
-          <td>${item.brand}</td>
-          <td>
-            <button onclick="editItem(${index})">Editar</button>
-            <button onclick="deleteItem(${index})">Excluir</button>
-          </td>
-        `;
-        stockList.appendChild(row);
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${item.item}</td>
+        <td>${item.brand}</td>
+        <td>${item.model}</td>
+        <td>${item.serialNumber}</td>
+        <td>
+          <button onclick="editItem(${index})">Editar</button>
+          <button onclick="deleteItem(${index})">Excluir</button>
+        </td>
+      `;
+      stockList.appendChild(row);
     });
 }
-/*
+
 // Função para editar um item do estoque
 function editItem(index) {
     // Obtém o item pelo índice no estoque
@@ -61,10 +63,10 @@ function editItem(index) {
 
     // Preenche os inputs com os valores do item
     inputItem.value = item.item;
-    /*inputBrand.value = item.brand;
+    inputBrand.value = item.brand;
     inputModel.value = item.model;
-    inputSerialNumber.value = item.serialNumber;*/
-/*
+    inputSerialNumber.value = item.serialNumber;
+
     // Remove o item do estoque
     itens.splice(index, 1);
 
@@ -79,18 +81,10 @@ function deleteItem(index) {
 
     // Atualiza a tabela
     displayStock();
-}*/
+}
 
 // Event Listener para adicionar o item quando o formulário for submetido
-stockRecord.addEventListener('submit', addItem);
+stockTable.addEventListener('submit', addItem);
 
 // Inicializa a exibição do estoque
 displayStock();
-
-
-
-/*
-          
-          <td>${item.model}</td>
-          <td>${item.serialNumber}</td>
-*/

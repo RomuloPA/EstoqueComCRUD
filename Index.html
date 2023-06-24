@@ -7,35 +7,55 @@
     <title>Estoque com CRUD</title>
 </head>
 <body>
-    <h1 class="title" id="title">Estoque da loja</h1>
-    <form class="stock-record" id="stock-record">
-        <label for="item">Item: </label>
-        <input type="text" class="data-input" id="item" placeholder="Item" required/>
+    <div class="background" id="background">
 
-        <label for="brand">Marca: </label>
-        <input type="text" class="data-input" id="brand" placeholder="Marca" required/>
-        
-        <!--<label for="model">Modelo: </label>
-        <input type="text" class="data-input" id="model" placeholder="Modelo" required/>
+        <video autoplay loop muted>
+            <source src="VideoBackground.mp4" type="video/mp4">
+            Desculpe, seu navegador não suporta vídeos HTML5.
+        </video>
 
-        <label for="serial-number">Nº de série: </label>
-        <input type="text" class="data-input" id="serial-number" placeholder="Nº de Série" required/>-->
+        <div class="first-page" id="first-page">
+            <div class="choose-one">
+                <p><br>Para acessar os itens em estoque </p>
+                <button class="btn-choice" id="btn-choice" onclick="biggestCountriesPage()">CLIQUE AQUI</button>
+            </div>
+            <div class="choose-two">
+                <p><br>Para adicionar itens no estoque</p>
+                <button class="btn-choice" id="btn-choice" onclick="smallestCountriesPage()">CLIQUE AQUI</button>
+            </div>
+        </div>
 
-        <button type="submit" class="add" id="add">Adicionar</button>
-    </form>
+        <h1 class="title" id="title">Estoque da loja</h1>
+        <form class="stock-record" id="stock-record">
+            <label for="item">Item: </label>
+            <input type="text" class="data-input" id="item" placeholder="Item" required/>
 
-    <table class="stock-table" id="stock-table">
-        <thead>
-            <tr>
-                <th>Item</th>
-                <th>Marca</th>
-                <!--<th>Modelo</th>
-                <th>Nº de Série</th>-->
-                <th>Ação</th>
-            </tr>
-        </thead>
-        <tbody id="stock-list"></tbody>
-    </table>
+            <label for="brand">Marca: </label>
+            <input type="text" class="data-input" id="brand" placeholder="Marca" required/>
+            
+            <label for="model">Modelo: </label>
+            <input type="text" class="data-input" id="model" placeholder="Modelo" required/>
+
+            <label for="serial-number">Nº de série: </label>
+            <input type="text" class="data-input" id="serial-number" placeholder="Nº de Série" required/>
+
+            <button type="submit" class="add" id="add">Adicionar</button>
+        </form>
+
+        <table class="stock-table" id="stock-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Nº de Série</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="stock-list"></tbody>
+        </table>
+
+    </div>
 
     <script src="Script.js"></script>
 
