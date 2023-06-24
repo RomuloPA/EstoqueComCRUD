@@ -8,14 +8,34 @@
 </head>
 <body>
     <h1 class="title" id="title">Estoque da loja</h1>
-    <form class="stock-table" id="stock-table">
-            <input type="text" class="data-input" id="item" placeholder="Item" />
-            <input type="text" class="data-input" id="brand" placeholder="Marca" />
-            <input type="text" class="data-input" id="model" placeholder="Modelo" />
-            <input type="text" class="data-input" id="serial-number" placeholder="Nº de Série" />
-            <button type="submit" class="add" id="add">Adicionar</button>
-            <ul class="list" id="list"></ul>
+    <form class="stock-record" id="stock-record">
+        <label for="item">Item: </label>
+        <input type="text" class="data-input" id="item" placeholder="Item" required/>
+
+        <label for="brand">Marca: </label>
+        <input type="text" class="data-input" id="brand" placeholder="Marca" required/>
+        
+        <!--<label for="model">Modelo: </label>
+        <input type="text" class="data-input" id="model" placeholder="Modelo" required/>
+
+        <label for="serial-number">Nº de série: </label>
+        <input type="text" class="data-input" id="serial-number" placeholder="Nº de Série" required/>-->
+
+        <button type="submit" class="add" id="add">Adicionar</button>
     </form>
+
+    <table class="stock-table" id="stock-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Marca</th>
+                <!--<th>Modelo</th>
+                <th>Nº de Série</th>-->
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody id="stock-list"></tbody>
+    </table>
 
     <script src="Script.js"></script>
 
