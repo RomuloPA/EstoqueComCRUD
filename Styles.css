@@ -86,14 +86,15 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 .title {
-    /*position: relative;*/
-  /*  color: #6b0606;
+    position: absolute;
+    color: #6b0606;
     text-align: center;
     font-size: 4rem;
-}*/
+    margin-top: -40rem;
+}
 
 .stock-table {
     position: absolute;
@@ -116,6 +117,13 @@ th {
     width: auto;
     
 }
+
+.stock-record {
+    position: absolute;
+    width: 20rem;
+    /*display: inline-block;*/
+}
+
 /*
 .data-input {
     color: #6b0606;

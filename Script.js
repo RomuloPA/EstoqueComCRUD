@@ -4,6 +4,17 @@ function accessStock() {
 
   var stockTable = document.getElementById("stock-table");
   stockTable.style.display = 'block';
+
+  var title = document.getElementById("title");
+  title.style.display = 'block';
+}
+
+function addStock() {
+  var firstPage = document.getElementById("first-page");
+  firstPage.style.display = 'none';
+
+  var addStock = document.getElementById("stock-record");
+  addStock.style.display = 'block';
 }
 
 // Array para armazenar os itens

@@ -21,11 +21,10 @@
             </div>
             <div class="choose-two">
                 <p><br>Para adicionar itens no estoque</p>
-                <button class="btn-choice" id="btn-choice" onclick="smallestCountriesPage()">CLIQUE AQUI</button>
+                <button class="btn-choice" id="btn-choice" onclick="addStock()">CLIQUE AQUI</button>
             </div>
         </div>
 
-        <h1 class="title" id="title">Estoque da loja</h1>
         <form class="stock-record" id="stock-record">
             <label for="item">Item: </label>
             <input type="text" class="data-input" id="item" placeholder="Item" required/>
@@ -42,7 +41,8 @@
             <button type="submit" class="add" id="add">Adicionar</button>
         </form>
 
-        <table class="stock-table" id="stock-table">
+        <h1 class="title" id="title">Estoque da loja</h1>  
+        <table class="stock-table" id="stock-table">  
             <thead>
                 <tr>
                     <th>Item</th>
