@@ -1,3 +1,11 @@
+function accessStock() {
+  var firstPage = document.getElementById("first-page");
+  firstPage.style.display = 'none';
+
+  var stockTable = document.getElementById("stock-table");
+  stockTable.style.display = 'block';
+}
+
 // Array para armazenar os itens
 let itens = [];
 

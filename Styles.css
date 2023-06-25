@@ -66,7 +66,8 @@ video {
     border: 3px solid #fff;
     padding: 0.2em 0.6em;
     border-radius: 4rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    transition: transform 0.5s;
 }
 
 .btn-choice:hover {
@@ -75,6 +76,7 @@ video {
     border: 3px solid #ff0000;
     font-weight: bold;
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 
@@ -91,16 +93,30 @@ video {
   /*  color: #6b0606;
     text-align: center;
     font-size: 4rem;
-}
+}*/
 
 .stock-table {
     position: absolute;
-    background-color: #b2f0cc;
+    width: 70%;
+    background-color: rgb(140, 235, 221);
+    /*opacity: 0.4;
     width: 50rem;
     height: 41rem;
-    margin-top: 4rem;
+    margin-top: 4rem;*/
 }
 
+tr {
+    width: 300px;
+}
+
+th {
+    padding: 2rem;
+    text-align: left;
+    background-color: rgb(61, 110, 103);
+    width: auto;
+    
+}
+/*
 .data-input {
     color: #6b0606;
     width: 10rem;
