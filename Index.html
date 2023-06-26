@@ -19,10 +19,6 @@
                 <p><br>Para acessar os itens em estoque </p>
                 <button class="btn-choice" id="btn-choice" onclick="accessStock()">CLIQUE AQUI</button>
             </div>
-            <div class="choose-two">
-                <p><br>Para adicionar itens no estoque</p>
-                <button class="btn-choice" id="btn-choice" onclick="addStock()">CLIQUE AQUI</button>
-            </div>
         </div>
 
         <form class="stock-record" id="stock-record">
@@ -38,10 +34,11 @@
             <label for="serial-number">Nº de série: </label>
             <input type="text" class="data-input" id="serial-number" placeholder="Nº de Série" required/>
 
-            <button type="submit" class="add" id="add">Adicionar</button>
+            <button type="submit" class="add" id="add" onclick="closeAdd()">Adicionar</button>
         </form>
 
-        <h1 class="title" id="title">Estoque da loja</h1>  
+        <h1 class="title" id="title">Estoque da loja</h1>
+        <button class="btn-add" id="btn-add" onclick="addStock()">Adicionar novo item +</button> 
         <table class="stock-table" id="stock-table">  
             <thead>
                 <tr>

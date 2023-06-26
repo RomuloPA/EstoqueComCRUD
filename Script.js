@@ -7,14 +7,45 @@ function accessStock() {
 
   var title = document.getElementById("title");
   title.style.display = 'block';
+
+  var btnAdd = document.getElementById("btn-add");
+  btnAdd.style.display = 'block';
 }
 
 function addStock() {
-  var firstPage = document.getElementById("first-page");
-  firstPage.style.display = 'none';
-
   var addStock = document.getElementById("stock-record");
   addStock.style.display = 'block';
+
+  var stockTable = document.getElementById("stock-table");
+  stockTable.style.opacity = '0.3';
+  stockTable.style.filter = 'blur(0.2rem)';
+  stockTable.style.position = 'relative';
+
+  var title = document.getElementById("title");
+  title.style.opacity = '0.3';
+  title.style.filter = 'blur(0.2rem)';
+
+  var btnAdd = document.getElementById("btn-add");
+  btnAdd.style.opacity = '0.3';
+  btnAdd.style.filter = 'blur(0.2rem)';
+}
+
+function closeAdd() {
+  var addStock = document.getElementById("stock-record");
+  addStock.style.display = 'none';
+
+  var stockTable = document.getElementById("stock-table");
+  stockTable.style.opacity = '1';
+  stockTable.style.filter = 'none';
+  stockTable.style.position = 'absolute';
+
+  var title = document.getElementById("title");
+  title.style.opacity = '1';
+  title.style.filter = 'none';
+
+  var btnAdd = document.getElementById("btn-add");
+  btnAdd.style.opacity = '1';
+  btnAdd.style.filter = 'none';
 }
 
 // Array para armazenar os itens

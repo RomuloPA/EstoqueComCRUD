@@ -6,7 +6,7 @@
     font-family: sans-serif;
 }
 
-.title, .stock-record, .stock-table {
+.title, .stock-record, .stock-table, .add-stock, .btn-add {
     display: none;
 }
 
@@ -34,22 +34,7 @@ video {
     background-color: rgb(0, 0, 0);
     color: #fff;
     margin-top: -15rem;
-    margin-left: -70rem;
-    text-align: center;
-    font-weight: bold;
-    font-size: 3.3rem;
-    opacity: 0.9;
-}
-
-.choose-two {
-    position: absolute;
-    width: 20rem;
-    height: 30rem;
-    border-radius: 3rem;
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-    margin-top: -15rem;
-    margin-left: -40rem;
+    margin-left: -57rem;
     text-align: center;
     font-weight: bold;
     font-size: 3.3rem;
@@ -90,14 +75,19 @@ video {
 
 .title {
     position: absolute;
-    color: #6b0606;
+    color: #ffffff;
     text-align: center;
     font-size: 4rem;
     margin-top: -40rem;
+    text-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.7);
 }
 
 .stock-table {
     position: absolute;
+    /*position: fixed;*/
+    height: 30rem;
+    overflow: auto;
+    top: 13rem;
     width: 70%;
     background-color: rgb(140, 235, 221);
     /*opacity: 0.4;
@@ -106,24 +96,100 @@ video {
     margin-top: 4rem;*/
 }
 
-tr {
+/*tr {
     width: 300px;
-}
+}*/
 
 th {
     padding: 2rem;
     text-align: left;
     background-color: rgb(61, 110, 103);
-    width: auto;
-    
+    width: 14rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+tbody {
+    width: 10rem;
 }
 
 .stock-record {
     position: absolute;
-    width: 20rem;
+    width: 30rem;
+    height: 32rem;
+    top: 8rem;
+    background-color: #1100ff9a;
+    border: 0.15rem solid #000000;
+    border-radius: 2rem;
     /*display: inline-block;*/
 }
 
+label {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+    text-align: center;
+}
+
+input {
+    width: 24rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    border: 0.15rem solid #000000;
+    border-radius: 0.5rem;
+}
+
+.add {
+    width: 12rem;
+    height: 4rem;
+    margin-top: 1.5rem;
+    margin-left: 9rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: 0.4rem solid #000000;
+}
+
+.add:hover {
+    width: 12rem;
+    height: 4rem;
+    margin-top: 1.5rem;
+    margin-left: 9rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: 0.4rem solid #000000;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.btn-add {
+    position: absolute;
+    width: 9rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    background: #0000006a;
+    color: #ffffff;
+    font-weight: bold;
+    border: 0.4rem solid #fff;
+    padding: 0.2em 0.6em;
+    border-radius: 2rem;
+    margin-top: 5rem;
+    margin-left: 80rem;
+    transition: transform 0.5s;
+}
+
+.btn-add:hover {
+    background: #ffffff31;
+    color: #ff0000;
+    border: 0.4rem solid #ff0000;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1.2);
+}
 /*
 .data-input {
     color: #6b0606;
