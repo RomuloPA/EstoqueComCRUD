@@ -1,3 +1,4 @@
+// Função para acessar o estoque
 function accessStock() {
   var firstPage = document.getElementById("first-page");
   firstPage.style.display = 'none';
@@ -12,6 +13,7 @@ function accessStock() {
   btnAdd.style.display = 'block';
 }
 
+// Função para abrir o modal com os inputs para adicionar o item
 function addStock() {
   var addStock = document.getElementById("stock-record");
   addStock.style.display = 'block';
@@ -30,6 +32,7 @@ function addStock() {
   btnAdd.style.filter = 'blur(0.2rem)';
 }
 
+// Função para fechar o modal quando é adicionado um item
 function closeAdd() {
   var addStock = document.getElementById("stock-record");
   addStock.style.display = 'none';
@@ -98,8 +101,8 @@ function displayStock() {
         <td>${item.model}</td>
         <td>${item.serialNumber}</td>
         <td>
-          <button onclick="editItem(${index})">Editar</button>
-          <button onclick="deleteItem(${index})">Excluir</button>
+          <button class="btn-editDelete" onclick="editItem(${index}), addStock()">Editar</button>
+          <button class="btn-editDelete" onclick="deleteItem(${index})">Excluir</button>
         </td>
       `;
       stockList.appendChild(row);
