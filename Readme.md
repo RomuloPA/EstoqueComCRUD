@@ -1,6 +1,6 @@
 # Página de uma planilha de estoque utilizando "CRUD"
 
-🎉 Bem-vindo(a) ao meu projeto de uma página web com uma planilha de estoque utilizando o "CRUD", onde o item pode ser adicionado, vizualizado, revisado e deletado. O projeto foi desenvolvido em HTML, CSS e JavaScript. 
+🎉 Bem-vindo(a) ao meu projeto de uma página web com uma planilha de estoque utilizando o "CRUD", onde o item pode ser adicionado, visualizado, revisado e deletado. O projeto foi desenvolvido em HTML, CSS e JavaScript. 
 Para deixar o visual ainda mais legal, utilizei um vídeo de background.
 
 🔍 Ao clicar no botão adicionar novo item +, um modal será exibido para o preenchimento das informações do item. 
